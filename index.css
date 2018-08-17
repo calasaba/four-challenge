@@ -1,0 +1,149 @@
+/*
+* @Author: 85314
+* @Date:   2018-08-17 20:37:19
+* @Last Modified by:   85314
+* @Last Modified time: 2018-08-17 20:39:51
+*/
+/*
+* @Author: calasaba
+* @Date:   2018-08-08 14:43:49
+* @Last Modified by:   calasaba
+* @Last Modified time: 2018-08-17 19:37:33
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 12px;
+}
+@media screen and (min-width: 320px) {
+    html {
+        font-size: calc(100% + 2 * (100vw - 375px) / 27.5);
+        font-size: calc(14px + 2 * (100vw - 320px) / 27.5);
+    }
+}
+@media screen and (min-width: 375px) {
+    html {
+        /* iPhone6的375px尺寸作为16px基准，414px正好18px大小, 600 20px */
+        font-size: calc(100% + 2 * (100vw - 375px) / 39);
+        font-size: calc(16px + 2 * (100vw - 375px) / 39);
+    }
+}
+@media screen and (min-width: 414px) {
+    html {
+        /* 414px-1000px每增加100像素宽字体增加1px(18px-22px) */
+        font-size: calc(112.5% + 4 * (100vw - 414px) / 586);
+        font-size: calc(18px + 4 * (100vw - 414px) / 586);
+    }
+}
+@media screen and (min-width: 600px) {
+    html {
+        /* 600px-1000px每增加100像素宽字体增加1px(20px-24px) */
+        font-size: calc(125% + 4 * (100vw - 600px) / 400);
+        font-size: calc(20px + 4 * (100vw - 600px) / 400);
+    }
+}
+@media screen and (min-width: 1000px) {
+    html {
+        /* 1000px往后是每增加100像素宽字体增加0.5px */
+        font-size: calc(137.5% + 6 * (100vw - 1000px) / 1000);
+        font-size: calc(24px + 6 * (100vw - 1000px) / 1000);
+    }
+}
+body{
+    width: 100vw;
+    background:#eff0f4;
+    color: #fff;
+}
+.header{
+    /*height: 96px;  */
+     /*line-height: 96px; */
+    height: 4.528302rem; 
+    line-height: 4.528302rem;  
+    letter-spacing: 0.556vw;  
+    background: #68cdd5;
+    position: relative;
+}
+.close{
+    /*font-size: 32px;*/
+    font-size: 1.509434rem;
+    position:absolute;
+    top: 0;
+    left: 5%;
+}
+.register{
+    /*font-size: 32px;*/
+    font-size: 1.509434rem;
+    /*float: right;
+    padding-right: 32px;*/
+    position: absolute;
+    top: 0;
+    right: 5%;
+}
+.log-in{
+    /*font-size:36px;*/
+    font-size: 1.698113rem;
+   /* padding: 0 45% 0 45%;*/
+    position: absolute;
+    top: 0;
+    left: 45%;
+}
+.phone, .password{
+    background: #fff;
+    /*line-height: 100px;*/
+    line-height: 4.716981rem;
+    /*margin-top: 16px;*/
+    margin-top: 0.754717rem;
+    /*height: 100px;*/
+    height: 4.716981rem;
+    position: relative;
+}
+.phone img,.password img{
+    display: block;
+    position: absolute;
+    left: 0;
+    /*width: 28px;
+    height: 41px;*/
+    width: 1.320755rem;
+    height: 1.981132rem;
+    /*top: 23px;*/
+    top: 1.084906rem;
+    /*padding: 8px 46px 8px 43px;*/
+    padding: 0.377358rem 2.169811rem 0.377358rem 2.028302rem;
+    border-right: 1px solid #e1e5e7;
+}
+.phone-number,.password-number{
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    /*height: 100px;*/
+    height: 4.716981rem;
+    /*font-size: 32px;*/
+    font-size: 1.509434rem;
+    color: #808080;
+    /*margin-left:147px;*/
+    margin-left:6.933962rem;
+}
+.button{
+    width: 100vw;
+    /*height: 100px;*/
+    height: 4.716981rem;
+    vertical-align: middle;
+    text-align: center;
+    /*font-size: 36px;*/
+    font-size: 1.698113rem;
+    letter-spacing: 16px;
+    letter-spacing: 0.754717rem;
+    background: #5fc0cd;
+    /*margin-top: 40px;*/
+    margin-top: 1.886792rem;
+    color: #fff;
+    list-style-type:none;
+}
+.overflow{
+    overflow: auto;
+}
+::-moz-placeholder { color: #e1e5e7; }
+::-webkit-input-placeholder { color:#e1e5e7; }
+:-ms-input-placeholder { color:#e1e5e7; }
